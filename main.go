@@ -45,11 +45,8 @@ var (
 func main() {
 	addr := "127.0.0.1:19999" // 当前连接地址
 
-	// addr := "84.246.108.44:19999" // 当前连接地址
-
 	fmt.Printf("尝试连接到 ShredStream 服务: %s\n", addr)
 
-	// 启动统计goroutine
 	go printStats()
 
 	// 使用重连循环确保稳定连接
